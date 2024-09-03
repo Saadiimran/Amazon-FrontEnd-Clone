@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon.com</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+    <nav class="nav navbar-expand-lg navbar-dark bg-dark" style="max-height: 10vh;">
+        <div class="container-fluid d-flex align-items-center">
+            <a href="#"><img class="logo image mt-1 p-2" src="assets/amazon_logo.png"></a>
+            <a href="#" class="d-flex align-items-center p-1 me-1 image" style="text-decoration: none;">
+                <img src="assets/location_icon.png" style="height: 3vh;">
+                <div class="ms-2 text-white">
+                    <small class="text-white-50 "> Deliver to </small>
+                    <h5 class="mb-0 fs-6 fw-bold">Pakistan</h5>
+                </div>
+            </a>
+            <a class="input-group" style="text-decoration: none;">
+                <select class="form-select" id="form-control" style="max-width: 13vh;">    
+                    <option selected>All Departments</option>
+                    <option value="2">Arts & Crafts</option>
+                    <option value="3">Automotive</option>
+                    <option value="4">Baby</option>
+                    <option value="5">Beauty & Personal Care</option>
+                    <option value="6">Books</option>
+                    <option value="7">Boys' Fashion</option>
+                    <option value="8">Computers</option>
+                    <option value="9">Deals</option>
+                    <option value="10">Digital Music</option>
+
+                </select>
+                <input type="text" class="form-control" id="form-control" placeholder="Search Amazon">
+                <button class="btn btn-warning" type="submit">
+                    <img src="assets/search_icon.png" class="search_icon">
+                </button>
+            </a>
+            <div class="nav-language m-2 p-0 image d-flex align-items-center">
+                <img src="assets/us_flag.png" style="max-width: 5vh;">
+                <p class="pt-3 ps-1 fw-bold">EN</p>
+                <a class="nav-link dropdown-toggle m-0 ps-1 pe-0 pt-0 pb-0" id="navlink" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"></a>
+                <ul class="dropdown-menu" id="dropdown1" aria-labelledby="navlink">
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                    <label class="form-check-label" for="exampleRadios1">English</label><br>
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                    <label class="form-check-label" for="exampleRadios2">español-ES</label><br>
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
+                    <label class="form-check-label" for="exampleRadios3">العربية-AR</label><br>
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios4" value="option4">
+                    <label class="form-check-label" for="exampleRadios4">Deutsch-DE</label><br>
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios5" value="option5">
+                    <label class="form-check-label" for="exampleRadios5">العربية-AR</label><br>
+                </ul>
+            </div>
+            <div class="nav-text image">
+                <a class="nav-link dropdown-toggle m-0 ps-1 pe-0 pt-0 pb-0 text-white"  id="navlink2" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <span style="font-size: smaller;">Hello, sign in</span><br>
+                    <h5 class="fs-6 fw-bold" style="display: inline;">Accounts & Lists</h5>
+                </a>
+                <ul class="dropdown-menu" id="dropdown2" aria-labelledby="navlink2">
+                    <div class="dropdown-section">
+                        <div class="dropdown-button">
+                            <button>Sign in</button>
+                        </div>
+                        <li class="text-center fs-6 fw-bold">Your Lists</li>
+                        <li><a class="dropdown-item" href="#">Create a List</a></li>
+                        <li><a class="dropdown-item" href="#">Find a List or Registry</a></li>
+                    </div>
+                    <div class="dropdown-section">
+                        <li class="text-center fs-6 fw-bold">Your Account</li>
+                        <li><a class="dropdown-item" href="#">Account</a></li>
+                        <li><a class="dropdown-item" href="#">Orders</a></li>
+                        <li><a class="dropdown-item" href="#">Recommendations</a></li>
+                        <li><a class="dropdown-item" href="#">Browsing History</a></li>
+                        <li><a class="dropdown-item" href="#">Watchlist</a></li>
+                        <li><a class="dropdown-item" href="#">Video Purchases & Rentals</a></li>
+                        <li><a class="dropdown-item" href="#">Kindle Unlimited</a></li>
+                        <li><a class="dropdown-item" href="#">Content & Devices</a></li>
+                        <li><a class="dropdown-item" href="#">Subscribe & Save Items</a></li>
+                        <li><a class="dropdown-item" href="#">Memberships & Subscriptions</a></li>
+                        <li><a class="dropdown-item" href="#">Music Library</a></li>
+                    </div>
+                </ul>
+            </div>
+            <div class="return-order image ms-1 p-1">
+                <a href="" class="text-white text-decoration-none">
+                    <span style="font-size: smaller;">Returns</span>
+                    <h5 class="fs-6 fw-bold">&&nbsp;Orders</h5>
+                </a>
+            </div>
+            <a href="" class="nav-cart image p-1 d-flex align-items-end text-white text-decoration-none">
+                <img src="assets/cart_icon.png" style="max-width: 8vh;">
+                <h6 class="fs-6 fw-bold">Cart</h6>
+            </a>
+        </div>
+    </nav>
+
+    <div class="nav-bottom d-flex align-items-center">
+        <div class="all image ">
+            <a href="" class="d-flex align-items-center text-white text-decoration-none" >
+                <img src="assets/menu_icon.png" style="max-height: 4vh; margin: 5px;" >
+                <p class="fw-bold mb-0">All</p>
+            </a>
+        </div>
+        <div class="todays-deals image" >
+            <a href="" class="text-white text-decoration-none mb-3">
+                <p class="mb-0 ps-3 pe-2 pt-2 pb-2">Today's Deals</p>
+            </a>
+        </div>
+        <div class="customer-service image" >
+            <a href="" class="text-white text-decoration-none mb-3">
+                <p class="mb-0 p-2">Customer Service</p>
+            </a>
+        </div>
+        <div class="registry image" >
+            <a href="" class="text-white text-decoration-none mb-3">
+                <p class="mb-0 p-2">Registry</p>
+            </a>
+        </div>
+        <div class="gift-cards image" >
+            <a href="" class="text-white text-decoration-none mb-3">
+                <p class="mb-0 p-2">Gift Cards</p>
+            </a>
+        </div>
+        <div class="Sell image" >
+            <a href="" class="text-white text-decoration-none mb-3">
+                <p class="mb-0 p-2">Sell</p>
+            </a>
+        </div>
+    </div>
+        <div class="header-slider">
+            <a href="" class="arrow-prev ms-1" ><img src="assets/arrow-backward.png" height="30vh"></a>
+            <a href="" class="arrow-next me-1"><img src="assets/arrow-foward.png" height="30vh" ></a>
+            <ul>
+                <img src="assets/header1.jpg" class="header-img">
+                <img src="assets/header2.jpg" class="header-img">
+                <img src="assets/header3.jpg" class="header-img">
+                <img src="assets/header4.jpg" class="header-img">
+                <img src="assets/header5.jpg" class="header-img">
+                <img src="assets/header6.jpg" class="header-img">
+            </ul>
+        </div>  
+        <section class="shop-section header-box">
+            <div class="shop-images">
+              <div class="shop-link">
+                <h4 >Shop Laptops Tables</h4>
+                <img src="assets/img-1.png" alt="card">
+                <a href="#">Shop now</a>
+              </div>
+              <div class="shop-link">
+                <h4>Shop Smartwatches</h4>
+                <img src="assets/img-2.png" alt="card">
+                <a href="#">Shop now</a>
+              </div>
+              <div class="shop-link">
+                <h4> Shop Strip Lights</h4>
+                <img src="assets/img-3.png" alt="card">
+                <a href="#">Shop now</a>
+              </div>
+              <div class="shop-link">
+                <h4>Shop Desktops</h4>
+                <img src="assets/box1-4.jpg" alt="card">
+                <a href="#">Shop now</a>
+              </div>
+            </div>
+          </section>
+
+          <section class="shop-section s2">
+            <div class="shop-images">
+              <div class="shop-link">
+                <h4>Amazon Gadget Store</h4>
+                <img src="assets/Gadgets.jpg" alt="card">
+                <a href="#">Shop now</a>
+              </div>
+              <div class="shop-link">
+                <h4>Toys under $25</h4>
+                <img src="assets/box1-3.jpg" alt="card">
+                <a href="#">Shop now</a>
+              </div>
+              <div class="shop-link">
+                <h4> Home décor under $50</h4>
+                <img src="assets/decor.jpg" alt="card">
+                <a href="#">Shop now</a>
+              </div>
+              <div class="shop-link">
+                <h4>Fashion trends you like</h4>
+                <img src="assets/box2-4.jpg" alt="card">
+                <a href="#">Shop now</a>
+              </div>
+            </div>
+          </section>          
+          <div class="product-slider s2 ">
+            <h2>Popular products in Apparel internationally</h2>
+            <div class="products">
+                <img src="assets/jacket.jpg" alt="">
+                <img src="assets/jacket2.jpg" alt="">
+                <img src="assets/shirt.jpg" alt="">
+                <img src="assets/hoodie.jpg" alt="">
+                <img src="assets/cap.jpg" alt="">
+                <img src="assets/human.jpg" alt="">
+                <img src="assets/socks.jpg" alt="">
+                <img src="assets/hoodie2.jpg" alt="">
+                <img src="assets/cap2.jpg" alt="">
+                <img src="assets/jacket3.jpg" alt="">
+                <img src="assets/jacket4.jpg" alt="">
+                <img src="assets/shirt2.jpg" alt="">
+                <img src="assets/jacket8.jpg" alt="">
+                <img src="assets/shirt3.jpg" alt="">
+                <img src="assets/jacket5.jpg" alt="">
+                <img src="assets/shirt4.jpg" alt="">
+                <img src="assets/wallet.jpg" alt="">
+                <img src="assets/rope.jpg" alt="">
+                <img src="assets/jacket6.jpg" alt="">
+                <img src="assets/jacket7.jpg" alt="">
+            </div>
+          </div>
+          
+          <div class="product-slider ">
+            <h2>New international customers purchased</h2>
+            <div class="products">
+                <img src="assets/wisdom.jpg" alt="">
+                <img src="assets/hardrive.jpg" alt="">
+                <img src="assets/urantia.jpg" alt="">
+                <img src="assets/motherboard.jpg" alt="">
+                <img src="assets/foolporof.jpg" alt="">
+                <img src="assets/cupboard.jpg" alt="">
+                <img src="assets/oxford.jpg" alt="">
+                <img src="assets/destiny.jpg" alt="">
+                <img src="assets/discovery.jpg" alt="">
+                <img src="assets/pc.jpg" alt="">
+                <img src="assets/agile.jpg" alt="">
+                <img src="assets/alishba.jpg" alt="">
+                <img src="assets/avery.jpg" alt="">
+                <img src="assets/alishbakhan.jpg" alt="">
+            </div>
+          </div>
+
+          <section class="shop-section s2">
+            <div class="shop-images">
+              <div class="shop-link">
+                <h4>Shop activity trackers <br> and smartwatches</h4>
+                <img src="assets/smartwatch.jpg" alt="card">
+                <a href="#">Shop now</a>
+              </div>
+              <div class="shop-link">
+                <h4>Warm & welcoming <br> decor</h4>
+                <img src="assets/garland.jpg" alt="card">
+                <a href="#">Shop for more fall finds</a>
+              </div>
+              <div class="shop-link">
+                <h4>Gaming merchandise</h4>
+                <img src="assets/gamingshirt.jpg" alt="card">
+                <a href="#">Shop now</a>
+              </div>
+              <div class="shop-link">
+                <h4>Fashion trends you like</h4>
+                <img src="assets/box2-4.jpg" alt="card">
+                <a href="#">Shop now</a>
+              </div>
+            </div>
+          </section>
+          <footer>
+            <a href="#" class="footer-title">
+              Back to top
+            </a>
+            <div class="footer-items">
+              <ul>
+                <h3>Get to Know Us</h3>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Press Release</a></li>
+                <li><a href="#">Amazon Science</a></li>
+              </ul>
+              <ul>
+                <h3>Connect with Us</h3>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">Instagram</a></li>
+              </ul>
+              <ul>
+                <h3>Make Money with Us</h3>
+                <li><a href="#">Sell on Amazon</a></li>
+                <li><a href="#">Sell under Amazon Accelerator</a></li>
+                <li><a href="#">Protect and Build Your Brand</a></li>
+                <li><a href="#">Amazon Global Selling</a></li>
+                <li><a href="#">Become an Affiliate</a></li>
+                <li><a href="#">Fulfillment by Amazon</a></li>
+                <li><a href="#">Advertise Your Products</a></li>
+                <li><a href="#">Amazon Pay on Merchants</a></li>
+              </ul>
+              <ul>
+                <h3>Let Us Help You</h3>
+                <li><a href="#">COVID-19 and Amazon</a></li>
+                <li><a href="#">Your Account</a></li>
+                <li><a href="#">Return Centre</a></li>
+                <li><a href="#">100% Purchase Protection</a></li>
+                <li><a href="#">Amazon App Download</a></li>
+                <li><a href="#">Help</a></li>
+              </ul>
+            </div>
+          </footer>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
