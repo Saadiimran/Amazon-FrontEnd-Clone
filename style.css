@@ -168,6 +168,7 @@ p{
     margin: 0px 30px;
     padding: 20px;
     margin-bottom: 15px;
+    cursor: pointer;
   }
   .product-slider .products{
     display: flex;
